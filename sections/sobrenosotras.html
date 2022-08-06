@@ -6,32 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SobreNosotras</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="contenedor">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="../img/iconobrown.jpg" alt="logo de Brown"></a>
+            <a class="navbar-brand" href="#"><p class="logopequeno"> BROWN LENCERIA </p></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
+              <ul class="navbar-nav d-flex" >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="./mujer.html">Mujer</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sections/mujer.html">Mujer</a>
                 </li>
-                <li>
-                    <a href="./hombre.html">Hombre</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sections/hombre.html">Hombre</a>
                 </li>
-                <li>
-                    <a href="./sobrenosotras.html">SobreNosotras</a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="sobrenosotras.html">Nosotras</a>
                 </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../sections/contacto.html">Contacto</a>
                 </li>
-            </ul>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <section class="contenidoS">
         <p>Hola! Bienvenidas a Brown Lencería, somos Mercedes y Constanza. Dos hermanas que en el contexto de una
             pandemia complicada decidimos emprender y encontramos nuestra pasión. Desde el principio le dedicamos cada
@@ -41,8 +51,8 @@
         </p>
     </section>
     <div class="galeriaHermanas">
-        <img src="../img/hermanas1.jpeg" alt="dos mujeres" data-aos="zoom-in">
-        <img src="../img/hermanas.jpeg" alt="dos mujeres abrazadas" data-aos="zoom-in">
+        <img src="../img/hermanas1.jpeg" alt="dos mujeres  abrazadas" data-aos="zoom-in">
+        <img src="../img/hermanas.jpeg" alt="dos mujeres" data-aos="zoom-in">
     </div>
     <footer>
         <h3>SEGUINOS</h3>
@@ -53,6 +63,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
