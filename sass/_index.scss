@@ -1,0 +1,23 @@
+.parrafo{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}
+.contenido{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media (min-width:576px){
+    .galeria{
+        flex-direction: column;
+    }
+}
+    @media (min-width:768px){
+    .galeria{
+        display: flex;
+        flex-direction: row;
+    }
+}
