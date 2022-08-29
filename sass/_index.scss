@@ -25,14 +25,24 @@
     display: flex;
     justify-content: center;
 }
-.depor{
-    width: 60%;
-    height: 80%;
-}
 
-@media (min-width:576px){
-    .galeria, .galeriaDepor{
+@media (min-width:300px){
+    .titulo{
+        display: none;
+    }
+    .galeria{
+        display: none;
+    }
+    .galeriaDepor{
         flex-direction: column;
+    }
+    .carousel{
+        display: block;
+    }
+    .depor{
+        width: auto;
+        height: auto;
+        
     }
 }
     @media (min-width:768px){
@@ -48,5 +58,17 @@
     }
     .item1{
         grid-column: 1/ -1;
+    }
+    .carousel{
+        display: none;
+    }
+    .depor{
+        width: 60%;
+        height: 80%;
+    }
+    @media (min-width:992px){
+        .titulo{
+            display: block;
+        }
     }
 }

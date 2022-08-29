@@ -48,12 +48,12 @@ header ul li .nav-link:hover {
   color: white;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .logo {
     display: none;
   }
   .logopequeno {
-    display: block;
+    display: flex;
     color: white;
   }
 }
@@ -95,14 +95,22 @@ header ul li .nav-link:hover {
   justify-content: center;
 }
 
-.depor {
-  width: 60%;
-  height: 80%;
-}
-
-@media (min-width: 576px) {
-  .galeria, .galeriaDepor {
+@media (min-width: 300px) {
+  .titulo, .subtitulo {
+    display: none;
+  }
+  .galeria {
+    display: none;
+  }
+  .galeriaDepor {
     flex-direction: column;
+  }
+  .carousel {
+    display: block;
+  }
+  .depor {
+    width: auto;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
@@ -119,6 +127,18 @@ header ul li .nav-link:hover {
   .item1 {
     grid-column: 1/-1;
   }
+  .carousel {
+    display: none;
+  }
+  .depor {
+    width: 60%;
+    height: 80%;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .titulo, .subtitulo {
+    display: block;
+  }
 }
 .galeriaHermanas {
   display: flex;
@@ -126,11 +146,27 @@ header ul li .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-.galeriaHermanas img {
-  width: 30%;
-  height: 50%;
-}
 
+@media (min-width: 300px) {
+  .contenidoS {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .galeriaHermanas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .galeriaHermanas {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer {
   background-color: #976f5b;
   margin-right: 20px;

@@ -27,12 +27,12 @@ header {
     } 
 }
 
-@media (min-width:400px){
+@media (min-width:300px){
     .logo{
         display: none;
     }
     .logopequeno{
-        display: block;
+        display: flex;
         color: white;
     }
     
