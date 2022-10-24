@@ -300,11 +300,10 @@ footer a:hover {
   border-radius: 50%;
   font-size: 12px;
   padding: 4px;
-  top: 37px;
-  right: 14px;
-  position: absolute;
+  top: -50px;
+  right: -20px; 
+  position: relative;
   display: none;
-}
-
+} 
 
 /*# sourceMappingURL=style.css.map */
