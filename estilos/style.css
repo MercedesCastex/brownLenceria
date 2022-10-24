@@ -16,6 +16,7 @@ body {
 .comprar{
   background-color:#976f5b;
   color: #e3cec4;
+  cursor: pointer;
 }
 
 img {
@@ -82,7 +83,7 @@ header ul li .nav-link:hover {
 }
 
 .contenido {
-  flex-direction: column;
+  flex-direction: row;
   font-size: 24px;
   font-weight: bolder;
 }
@@ -212,6 +213,10 @@ footer a:hover {
   scrollbar-color: none;
 }
 
+.modal-conteiner ::-webkit-scrollbar{
+  display: none;
+}
+
 .modal-header {
   display: flex;
   justify-content: space-around;
@@ -289,12 +294,17 @@ footer a:hover {
   font-size: 18px;
 }
 
-
-
-
-
-
-
+.cantidad-carrito{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
 
 
 /*# sourceMappingURL=style.css.map */

@@ -94,10 +94,11 @@
 const carritoContenedor = document.getElementById("carritoContenedor");
 const verCarrito = document.getElementById("verCarrito");
 const modalConteiner = document.getElementById ("modalConteiner");
+const cantidadCarrito = document.getElementById ("cantidadCarrito");
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-(ProductosMujer || ProductosHombre).forEach((product) =>{
+Productos.forEach((product) =>{
     let content = document.createElement("div");
     content.className = "card";
     content.innerHTML = `
@@ -119,8 +120,10 @@ let carrito = [];
         id: product.id,
         nombre: product.nombre,
         precio: product.precio, 
+        cantidad: product.cantidad,
       })
-      console.log(carrito);
+      carritoCounter();
+      saveLocal();
     })
 });
 
@@ -151,6 +154,7 @@ verCarrito.addEventListener("click", () => {
         <img src="${product.img}"
         <p> ${product.nombre} </p>
         <p> $${product.precio} </p>
+        <p> ${product.cantidad} </p>
          `;
     
          modalConteiner.append(carritoContent);
@@ -164,6 +168,18 @@ verCarrito.addEventListener("click", () => {
      `;
      modalConteiner.append(totalbuying);
 });
+
+const carritoCounter = () => {
+  cantidadCarrito.style.display = "block";
+  const carritoLength = carrito.length;
+  localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+
+  cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+};
+
+const saveLocal = () => {
+  localStorage.setItem("carrito",JSON.stringify(carrito));
+};
 
 
 
