@@ -92,22 +92,5 @@ const saveLocal = () => {
   localStorage.setItem("carrito",JSON.stringify(carrito));
 };
 
-// COMENTARIOS 
-
-document.getElementById('comentariodId');
-
-fetch('../comentarios.json')
-.then( (resp) => resp.json() )
-    .then( (data) => {
-       
-        data.forEach((comentario) => {
-            const li = document.createElement('li')
-            li.innerHTML = `
-                <h4>${comentario.nombre}</h4>
-                <p>${comentario.comentario}</p>
-            `
-            comentarioId.append(li)
-        })
-    })
 
   

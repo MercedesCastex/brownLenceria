@@ -306,4 +306,20 @@ footer a:hover {
   display: none;
 } 
 
+/*comentarios*/
+.comentarioCSS{
+ border-radius: 10px;
+ background-color: #976f5b;
+ color: #e3cec4;
+ width: 50%;
+ height: 50%;
+}
+::marker{
+  display: none;
+}
+
+.comentariosContenedor{
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
 /*# sourceMappingURL=style.css.map */
