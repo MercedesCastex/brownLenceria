@@ -92,19 +92,22 @@ const saveLocal = () => {
   localStorage.setItem("carrito",JSON.stringify(carrito));
 };
 
+// COMENTARIOS 
 
-//LIBRERIA 
+document.getElementById('comentariodId');
 
-let animation = anime ({
-  targets: [libreria],
+fetch('../comentarios.json')
+.then( (resp) => resp.json() )
+    .then( (data) => {
+       
+        data.forEach((comentario) => {
+            const li = document.createElement('li')
+            li.innerHTML = `
+                <h4>${comentario.nombre}</h4>
+                <p>${comentario.comentario}</p>
+            `
+            comentarioId.append(li)
+        })
+    })
 
-  duration: 1500,
-  delay: 1000,
-  direction: 'alternate',
-  loop: 3,
-  endDelay:1000,
-  easing: 'easeInOutSine',
-
-  translateX: 500
-});
-
+  
