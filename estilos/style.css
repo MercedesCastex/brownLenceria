@@ -314,12 +314,13 @@ footer a:hover {
  width: 50%;
  height: 50%;
 }
-::marker{
-  display: none;
+li{
+  list-style-type: none;
 }
 
 .comentariosContenedor{
-  flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
