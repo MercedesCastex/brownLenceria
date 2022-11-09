@@ -2,6 +2,8 @@ const carritoContenedor = document.getElementById("carritoContenedor");
 const verCarrito = document.getElementById("verCarrito");
 const modalConteiner = document.getElementById ("modalConteiner");
 const cantidadCarrito = document.getElementById ("cantidadCarrito");
+const libreria = document.getElementsByClassName ("galeriaDepor");
+
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -91,5 +93,18 @@ const saveLocal = () => {
 };
 
 
+//LIBRERIA 
 
+let animation = anime ({
+  targets: [libreria],
+
+  duration: 1500,
+  delay: 1000,
+  direction: 'alternate',
+  loop: 3,
+  endDelay:1000,
+  easing: 'easeInOutSine',
+
+  translateX: 500
+});
 
